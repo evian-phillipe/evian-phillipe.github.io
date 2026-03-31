@@ -7,120 +7,202 @@
 <title>Évian Phillipe | Smart Contract Developer</title>
 
 <style>
-body {
-font-family: Arial, sans-serif;
+* {
 margin: 0;
 padding: 0;
-background: #0f172a;
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+}
+
+body {
+background: #020617;
 color: white;
 }
 
 .container {
-max-width: 1000px;
+max-width: 1100px;
 margin: auto;
 padding: 40px 20px;
 }
 
+.hero {
+padding: 80px 0;
+}
+
 h1 {
-font-size: 42px;
-margin-bottom: 5px;
+font-size: 48px;
+font-weight: bold;
 }
 
 h2 {
 color: #38bdf8;
-margin-top: 40px;
+margin-top: 60px;
+margin-bottom: 20px;
 }
 
-.card {
-background: #111827;
-padding: 20px;
-border-radius: 10px;
-margin-top: 15px;
+.subtitle {
+font-size: 20px;
+color: #94a3b8;
+margin-top: 10px;
 }
 
-a {
-color: #38bdf8;
-text-decoration: none;
+.buttons {
+margin-top: 25px;
 }
 
-.skills span {
-display: inline-block;
-background: #1f2937;
-padding: 8px 12px;
-margin: 5px;
-border-radius: 6px;
-}
-<h2>Specializations</h2>
-
-<div class="skills">
-<span>Token Launchpads</span>
-<span>Staking Rewards</span>
-<span>Vesting Contracts</span>
-<span>Presale Contracts</span>
-<span>DeFi Protocols</span>
-</div>
 button {
 background: #38bdf8;
 border: none;
 padding: 12px 20px;
-border-radius: 6px;
+border-radius: 8px;
 cursor: pointer;
-margin-top: 15px;
+margin-right: 10px;
+font-weight: bold;
 }
 
 button:hover {
 background: #0ea5e9;
 }
-</style>
 
+.card {
+background: #020617;
+border: 1px solid #1e293b;
+padding: 25px;
+border-radius: 12px;
+margin-top: 20px;
+}
+
+.grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 20px;
+}
+
+.skills span {
+display: inline-block;
+background: #020617;
+border: 1px solid #1e293b;
+padding: 8px 14px;
+margin: 5px;
+border-radius: 6px;
+}
+
+.highlight {
+color: #38bdf8;
+font-weight: bold;
+}
+
+.footer {
+margin-top: 60px;
+padding-top: 30px;
+border-top: 1px solid #1e293b;
+color: #94a3b8;
+}
+</style>
 </head>
 
 <body>
 
 <div class="container">
 
+<div class="hero">
 <h1>Évian Phillipe</h1>
-<h3>Smart Contract Developer</h3>
+<p class="subtitle">
+Smart Contract Developer — Solidity • DeFi • Token Launches • Web3 Infrastructure
+</p>
 
-<p>Solidity • Ethereum • DeFi • NFT Contracts • Web3 Development</p>
-
+<div class="buttons">
 <a href="https://github.com/evian-phillipe" target="_blank">
 <button>View GitHub</button>
 </a>
 
-<h2>Projects</h2>
-<h2>Live Deployments</h2>
-
-<div class="card">
-<h3>ERC20 Token Deployment</h3>
-<p>Deployed ERC20 token contract with mint and burn functionality.</p>
-<a href="#">View on Etherscan</a>
+<a href="mailto:info@lsscoltd.com">
+<button>Hire Me</button>
+</a>
+</div>
 </div>
 
+<h2>Featured Projects</h2>
+
+<div class="grid">
+
 <div class="card">
-<h3>NFT Mint Deployment</h3>
-<p>Whitelist NFT mint contract deployed to testnet.</p>
-<a href="#">View on Etherscan</a>
-</div>
-<div class="card">
-<h3>ERC20 Token Contract</h3>
-<p>Custom ERC20 token with mint, burn, and owner control functionality.</p>
-<a href="https://github.com/evian-phillipe" target="_blank">View Project</a>
+<h3>Token Launchpad + Presale</h3>
+<p>
+Token presale smart contract with whitelist, soft cap, hard cap,
+refund logic, and liquidity lock.
+</p>
+<br>
+<span class="highlight">Tech:</span> Solidity, Hardhat, OpenZeppelin
+<br><br>
+<a href="https://github.com/evian-phillipe" target="_blank">View Project →</a>
 </div>
 
 <div class="card">
 <h3>NFT Mint Contract</h3>
-<p>Whitelist-based NFT minting contract with max supply and pricing.</p>
-<a href="https://github.com/evian-phillipe" target="_blank">View Project</a>
+<p>
+Whitelist NFT mint contract with max supply, mint limits,
+and owner withdraw functionality.
+</p>
+<br>
+<span class="highlight">Tech:</span> ERC721A, Solidity
+<br><br>
+<a href="https://github.com/evian-phillipe" target="_blank">View Project →</a>
 </div>
 
 <div class="card">
-<h3>Staking Smart Contract</h3>
-<p>Token staking contract with rewards distribution and withdrawals.</p>
-<a href="https://github.com/evian-phillipe" target="_blank">View Project</a>
+<h3>Staking Rewards Contract</h3>
+<p>
+Stake tokens and earn rewards with dynamic APY,
+claim rewards, and withdraw logic.
+</p>
+<br>
+<span class="highlight">Tech:</span> Solidity, DeFi Logic
+<br><br>
+<a href="https://github.com/evian-phillipe" target="_blank">View Project →</a>
 </div>
 
-<h2>Skills</h2>
+<div class="card">
+<h3>Vesting Contract</h3>
+<p>
+Token vesting contract for team allocation with
+cliff period and linear release schedule.
+</p>
+<br>
+<span class="highlight">Tech:</span> Solidity, Time Locks
+<br><br>
+<a href="https://github.com/evian-phillipe" target="_blank">View Project →</a>
+</div>
+
+</div>
+
+<h2>Services</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Token Launch Contracts</h3>
+<p>Presale, vesting, liquidity lock, and distribution contracts.</p>
+</div>
+
+<div class="card">
+<h3>DeFi Smart Contracts</h3>
+<p>Staking, yield farming, rewards, and protocol logic.</p>
+</div>
+
+<div class="card">
+<h3>NFT Smart Contracts</h3>
+<p>Mint contracts, whitelist, staking, and reveal mechanics.</p>
+</div>
+
+<div class="card">
+<h3>Smart Contract Audits</h3>
+<p>Security review, gas optimization, and vulnerability fixes.</p>
+</div>
+
+</div>
+
+<h2>Tech Stack</h2>
 
 <div class="skills">
 <span>Solidity</span>
@@ -128,36 +210,51 @@ background: #0ea5e9;
 <span>Hardhat</span>
 <span>Foundry</span>
 <span>OpenZeppelin</span>
+<span>ERC20</span>
+<span>ERC721</span>
+<span>DeFi</span>
+<span>Staking</span>
+<span>Tokenomics</span>
 <span>Web3.js</span>
 <span>Ethers.js</span>
 </div>
 
 <h2>About</h2>
 
+<div class="card">
 <p>
-I'm a smart contract developer focused on building secure and gas-optimized 
-contracts for DeFi, NFTs, and blockchain applications. I specialize in Solidity 
-development and Ethereum-based smart contract architecture.
+I'm a smart contract developer focused on building secure,
+gas-optimized smart contracts for DeFi protocols, token launches,
+and NFT platforms. I specialize in Solidity development and
+production-ready Web3 infrastructure.
 </p>
+</div>
 
-<h2>Contact</h2>
-
-<p>Email: info@lsscoltd.com</p>
-<p>GitHub: https://github.com/evian-phillipe</p>
 <h2>Hire Me</h2>
 
 <div class="card">
-<p>I build secure smart contracts for:</p>
+<p>I am available for:</p>
 
 <ul>
-<li>Token Launches</li>
-<li>NFT Projects</li>
-<li>Staking Platforms</li>
-<li>DeFi Protocols</li>
+<br>
+<li>Token Launch Smart Contracts</li>
+<li>Presale + Vesting Contracts</li>
+<li>Staking & Rewards Systems</li>
+<li>DeFi Protocol Development</li>
+<li>NFT Mint Contracts</li>
 </ul>
 
+<br>
+
 <p>Email: info@lsscoltd.com</p>
+<p>GitHub: https://github.com/evian-phillipe</p>
+
 </div>
+
+<div class="footer">
+© 2026 Évian Phillipe — Smart Contract Developer
+</div>
+
 </div>
 
 </body>
